@@ -1,0 +1,27 @@
+
+  <div class="container">
+
+    <label><b>Ime</b></label>
+    <input type="text" placeholder="Unesite vaše ime" [(ngModel)]="korisnickoIme" required>
+
+    <label><b>Prezime</b></label>
+    <input type="text" placeholder="Unesite vaše prezime" [(ngModel)]="korisnickoPrezime" required>
+
+    <label><b>Email</b></label>
+    <input type="text" placeholder="Unesite vašu email adresu" [(ngModel)]="korisnickiEmail" required>
+
+    <label><b>Lozinka</b></label>
+    <input type="password" placeholder="Enter Password" [(ngModel)]="korisnickaLozinka" required>
+
+    <label><b>Ponovo unesite lozinku</b></label>
+    <input type="password" placeholder="Repeat Password" [(ngModel)]="lozinkaponovo" required>
+    <hr>
+
+    <button type="submit" class="registerbtn" (click)="registruj()">Registriracija</button>
+
+  </div>
+
+  <div class="container signin">
+    <p>Već posjedujete korisnički nalog?   <a class="link" (click)="gotoLogin()">Prijavite se!</a> </p>
+  </div>
+

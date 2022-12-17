@@ -1,0 +1,13 @@
+<div class="container">
+  <label><b>Email</b></label>
+  <input type="text" placeholder="Unesite email adresu" [(ngModel)]="txtEmail" required>
+
+  <label><b>Lozinka</b></label>
+  <input type="password" placeholder="Unesite lozinku" [(ngModel)]="txtLozinka" required>
+
+  <button type="submit" (click)="login()">Prijava</button>
+
+  <p style="text-align: center; margin-top: 10px;">Ne posjedujete korisnički nalog?  <a class="link" (click)="gotoRegistracija()">Registrujte se!</a></p>
+
+
+</div>
